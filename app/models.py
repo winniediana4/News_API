@@ -34,5 +34,13 @@ class news:
       def get_reviews(cls,id):
 
         response = []
-        
-         
+
+        for reviews in cls.all_reviews:
+          if reviews.news_id == id:
+            response.append(reviews)
+
+            return response
+
+      
+
+

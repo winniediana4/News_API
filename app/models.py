@@ -40,7 +40,3 @@ class news:
             response.append(reviews)
 
             return response
-
-      
-
-

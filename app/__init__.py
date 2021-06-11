@@ -18,4 +18,6 @@ def create_app(config_name, config_options):
 
  bootstrap.init_app(app)
 
+ app.register_blueprint(main_blueprint)
+
 

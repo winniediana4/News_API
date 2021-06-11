@@ -1,4 +1,4 @@
-# News_APIis a web application that displays a list of various news sources. On choosing a news source, it will preview the top news articles of the day. Clicking a news article will redirect the user to read it fully from the news source. It achieves this by using the News API.
+# News_API is a web application that displays a list of various news sources. On choosing a news source, it will preview the top news articles of the day. Clicking a news article will redirect the user to read it fully from the news source. It achieves this by using the News API.
 
 You can view the site at:Heroku
 
@@ -14,11 +14,11 @@ See the image, description and time the news article was created
 Click on an article and read it fully from the news source
 Specifications
 Behaviour	Input	Output
-Display news sources	On page load	List of various news sources is displayed in a list
-Display tabs with news by category	On Tab link click	Clickable links to open news based on category
-Display articles from a news source	Click a news source	Redirected to a page with articles from the source
-Display the preview of an article	On page load	Each article displays an image,description and publication date
-To Read an entire article	Click an article	Redirected to the news source's site to read the entire article
+Display news sources	On page load.	List of various news sources is displayed in a list.
+Display tabs with news by category	On Tab link click	Clickable links to open news based on category.
+Display articles from a news source.	Click a news source	Redirected to a page with articles from the source.
+Display the preview of an article	On page load.	Each article displays an image, description and publication date.
+To Read an entire article	Click an article.	Redirected to the news source's site to read the entire article.
 SetUp / Installation Requirements
 Prerequisites
 python3.9
@@ -64,7 +64,7 @@ Technologies Used
 Python3.9
 Flask
 License
-Copyright (c) 2018 winniediana4
+Copyright (c) 2021 winniediana4
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -15,5 +15,7 @@ def create_app(config_name, config_options):
 
  app.config.from_object(DevConfig)
  app.config.from_pyfile('config.py')
- 
+
+ bootstrap.init_app(app)
+
 

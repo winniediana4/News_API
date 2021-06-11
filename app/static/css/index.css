@@ -1,0 +1,10 @@
+ul{
+  list-style-type: none;
+}
+news-card a{
+color: blue;
+}
+news-card a:hover{
+border-bottom: 2px black;
+padding-bottom: 30px;
+}

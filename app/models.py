@@ -28,4 +28,11 @@ class news:
       def get_reviews(cls,id):
 
         response = []
-            
+
+
+      @classmethod
+      def get_reviews(cls,id):
+
+        response = []
+        
+         

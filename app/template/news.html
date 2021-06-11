@@ -20,5 +20,40 @@
   <link rel="stylesheet" href="{{url_for('static',filename = 'css/news.css')}}">
   {% endblock %}
 
+  <!--content block-->
+  {% block content %}
+  <div class="container">
+
+    <!--poster background-->
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath"
+        style="background: url({{news.poster}}) no-repeat center center">
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 news-details">
+        <h3>{{ news.title }}</h3>
+
+        <p class="overview">{{ news.overview }}</p>
+        <p class="ratings"><b>{{ news.vote_average }}</b> - <i>{{ news.vote_count }}</i></p>
+        <a class="ratings" href="/news/reviews/news/{{news.id}}">Write a news review</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <h1>REVIEWS</h1>
+    <hr>
+
+    {% if reviews %}
+        {{macro.displayReviews(reviews)}}
+
+        % else %
+        <h3 class="text-center">This news section has no reviews</h3>
+
+        <a class="btn btn-danger btn-lg text-center" href="/news/review/{{news.id}}">write a new review</a>
+        % endif%
+        {% endblock %}
+  </div>
+
 </body>
 </html>

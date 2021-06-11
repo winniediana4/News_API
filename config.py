@@ -1,3 +1,4 @@
+from app.requests import configure_request
 import os
 
 class config:
@@ -9,15 +10,16 @@ class config:
  NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
  SECRET_KEY = os.environ.get('SECRET_KEY')
 
-class ProdConfig(Config):
+class ProdConfig(config):
    '''
    Production configuration child class
+   
    Args:
    Config: The parent configuration class with General configuration settings
    '''
    pass
 
-   class DEvConfig(Config):
+class DEvConfig(configure_request):
      '''
      Production configuration child class
 
@@ -33,9 +35,11 @@ class ProdConfig(Config):
        config:The parent configuration class with General configuration class with General configuration settings
        '''
 
-       DEBUG = True 
+       DEBUG = True
+
        config_options = {
-         'developement':DevConfig
+      'developement':'DevConfig',
        }
-    
-     'developement':ProdConfig  
+       { 
+       'developement':ProdConfig  
+       }

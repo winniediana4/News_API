@@ -22,3 +22,10 @@ class news:
 
       def save_review(self):
           Review.all_reviews.append(self) 
+
+
+      @classmethod
+      def get_reviews(cls,id):
+
+        response = []
+            
